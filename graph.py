@@ -11,6 +11,8 @@ class Graph:
             result[vertex] = []
             for edge in self.adjacency_list[vertex]:
                 result[vertex].append(edge[0])
+        print("Список смежности")
+        print("Вершина: смежная вершина")
         for key, value in result.items():
             print(f"{key}: {', '.join(value)}")
 
